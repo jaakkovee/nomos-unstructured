@@ -4,5 +4,6 @@ metadata:
   name: team2
   labels:
     sre-supported: true
+    test: ok
   annotations:
     configmanagement.gke.io/cluster-selector: region-west
