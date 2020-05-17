@@ -1,0 +1,11 @@
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: pod-creator
+  annotations:
+    configmanagement.gke.io/cluster-selector: region-north
+rules:
+- apiGroups: [""]
+  resources: ["pods"]
+  verbs:
+  - "*"

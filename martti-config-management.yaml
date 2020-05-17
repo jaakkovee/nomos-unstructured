@@ -1,0 +1,15 @@
+# config-management.yaml
+
+apiVersion: configmanagement.gke.io/v1
+kind: ConfigManagement
+metadata:
+  name: config-management
+spec:
+  # clusterName is required and must be unique among all managed clusters
+  clusterName: martti
+  git:
+    syncRepo: https://github.com/jaakkovee/nomos-unstructured
+    syncBranch: master
+    secretType: none
+    policyDir: "configs"
+  sourceFormat: unstructured
