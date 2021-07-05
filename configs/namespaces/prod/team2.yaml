@@ -4,5 +4,6 @@ metadata:
   name: team2
   labels:
     test: ok
+    class: linda
   annotations:
     configmanagement.gke.io/cluster-selector: region-west
